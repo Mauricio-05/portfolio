@@ -162,7 +162,7 @@ export function About() {
                 style={{ transformStyle: "preserve-3d", cursor: "pointer" }}
               >
                 <img
-                  src="/img/FotoLinkedln.jpeg"
+                  src="./img/FotoLinkedln.jpeg"
                   alt="Foto LinkedIn"
                   className="w-64 h-64 rounded-full object-cover shadow-lg"
                   draggable={false}

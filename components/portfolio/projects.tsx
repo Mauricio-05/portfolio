@@ -15,7 +15,7 @@ const projects = [
       "Desarrollo freelance de una aplicación web para la automatización del cálculo de horas laborales, disponible en la nube 24/7, con almacenamiento seguro y respaldado, y con capacidad de integración con sistemas de nómina.",
     tags: ["Php", "Angular", "TypeScript", "Scss", "HTML5"],
     image: {
-      url: "/img/Screenshot_1.png",
+      url: "./img/Screenshot_1.png",
       background: "linear-gradient(135deg, #1DB954 0%, #191414 100%)",
     },
     link: "https://admin-instalcom.onrender.com/authentication/login",
@@ -27,7 +27,7 @@ const projects = [
       "Esta es una API RESTful construida con Spring Boot que permite gestionar libros y autores. Proporciona endpoints para crear, leer, actualizar y eliminar tanto libros como autores. También permite asociar libros con autores.",
     tags: ["Java", "Spring Boot", "JPA", "SQL", "PostgreSQL", "Docker"],
     image: {
-      url: "/img/Screenshot_4.png",
+      url: "./img/Screenshot_4.png",
       background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     },
     link: "#",
@@ -49,7 +49,7 @@ const projects = [
       "Docker",
     ],
     image: {
-      url: "/img/Screenshot_2.png",
+      url: "./img/Screenshot_2.png",
       background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
     },
     link: "https://www.medellin.gov.co/geomedellin/",
@@ -70,7 +70,7 @@ const projects = [
       "Microservicios",
     ],
     image: {
-      url: "/img/Screenshot_3.png",
+      url: "./img/Screenshot_3.png",
       background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     },
     link: "https://www.bancolombia.com/personas",
