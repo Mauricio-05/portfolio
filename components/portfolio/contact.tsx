@@ -43,7 +43,7 @@ const socialLinks = [
   },
   {
     name: "Descargar CV",
-    href: "/pdf/Mauricio_Betancur_CV.pdf",
+    href: "./pdf/Mauricio_Betancur_CV.pdf",
     icon: Download,
   },
 ];
