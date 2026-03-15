@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "./icon.svg",
+        url: "./img/icon_1.svg",
         type: "image/svg+xml",
       },
     ],

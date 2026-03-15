@@ -1,8 +1,0 @@
-Para poder mover los ojos en la foto, necesito saber la posición aproximada de cada ojo en la imagen (en píxeles, desde la esquina superior izquierda). Por favor, abre la imagen en un editor (como Paint, Photoshop, GIMP, Figma, etc.), pon el cursor sobre el centro de cada ojo y anota las coordenadas X e Y de cada uno. Ejemplo:
-
-Ojo izquierdo: x=80, y=110
-Ojo derecho: x=160, y=112
-
-Cuando tengas esos valores, dímelos aquí y continúo con la magia :)
-
-Si prefieres que te ayude a estimarlo visualmente, dime el tamaño exacto de la imagen (ancho x alto en píxeles) y una referencia de dónde están los ojos (por ejemplo: "están a 1/3 desde arriba y 1/4 y 3/4 desde la izquierda").

@@ -27,7 +27,7 @@ const projects = [
       "Esta es una API RESTful construida con Spring Boot que permite gestionar libros y autores. Proporciona endpoints para crear, leer, actualizar y eliminar tanto libros como autores. También permite asociar libros con autores.",
     tags: ["Java", "Spring Boot", "JPA", "SQL", "PostgreSQL", "Docker"],
     image: {
-      url: "./img/Screenshot_4.png",
+      url: "",
       background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     },
     link: "#",
@@ -56,9 +56,9 @@ const projects = [
     secondary: { type: "", url: "" },
   },
   {
-    title: "Evolucion de canales digitales para Bancolombia",
+    title: "Evolucion de canales digitales para banco",
     description:
-      "Colaboración como proveedor externo en la evolución de aplicaciones estratégicas que soportan los canales digitales de Bancolombia, con enfoque en modernización tecnológica y mejora continua.",
+      "Colaboración como proveedor externo en la evolución de aplicaciones estratégicas que soportan los canales digitales de uno de los bancos más grandes de Latinoamérica, con enfoque en modernización tecnológica y mejora continua.",
     tags: [
       "Elixir",
       "Java",
@@ -70,10 +70,10 @@ const projects = [
       "Microservicios",
     ],
     image: {
-      url: "./img/Screenshot_3.png",
+      url: "",
       background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     },
-    link: "https://www.bancolombia.com/personas",
+    link: "https://www.linkedin.com/in/jbetancur21/overlay/1752532160235/single-media-viewer/?profileId=ACoAAC-NsRgB-2kmtdbI6mFRGoxW6kuu2PUG-Q0",
     secondary: { type: "", url: "" },
   },
 ];
@@ -291,10 +291,11 @@ export function Projects() {
         {/* View All Link */}
         <div className="mt-16 text-center">
           <a
-            href="#"
+            href="https://github.com/Mauricio-05?tab=repositories"
+            target="_blank"
             className="group inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            <span>View All Projects</span>
+            <span>Ver todos los proyectos</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>
