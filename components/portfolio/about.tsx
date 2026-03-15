@@ -189,7 +189,7 @@ export function About() {
             <p className="text-xl sm:text-2xl lg:text-3xl font-light leading-relaxed text-foreground">
               Soy un desarrollador apasionado por{" "}
               <span className="highlight bg-gradient-to-r from-primary/20 to-primary/20 bg-no-repeat bg-left-bottom">
-                contruir aplicaciones escalables
+                construir aplicaciones escalables
               </span>{" "}
               y desplegar proyectos a gran escala.
             </p>

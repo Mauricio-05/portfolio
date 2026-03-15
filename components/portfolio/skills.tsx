@@ -199,19 +199,68 @@ export function Skills() {
         );
       }
 
-      // Marquee animation
+      // Marquee animation mejorada para móviles y desktop
       if (marqueeRef.current) {
         const marquee = marqueeRef.current;
-        gsap.to(marquee.querySelector(".marquee-content"), {
-          xPercent: -50,
-          duration: 30,
+        const marqueeContent = marquee.querySelector(
+          ".marquee-content",
+        ) as HTMLElement | null;
+        if (!marqueeContent) return;
+
+        // Reset animación previa si existe
+        gsap.killTweensOf(marqueeContent);
+        marqueeContent.style.transform = "translateX(0)";
+
+        // Calcular el ancho real del contenido
+        const contentWidth = marqueeContent.scrollWidth / 2; // porque hay 2 copias
+        const distance = contentWidth;
+        // Duración proporcional al ancho (más lento en todos los dispositivos)
+        const baseSpeed = 60; // px/segundo (intermedio)
+        const duration = distance / baseSpeed;
+
+        gsap.to(marqueeContent, {
+          x: -distance,
+          duration,
           ease: "none",
           repeat: -1,
+          modifiers: {
+            x: gsap.utils.unitize((x) => parseFloat(x) % -distance),
+          },
         });
       }
     }, sectionRef);
 
-    return () => ctx.revert();
+    // Recalcular en resize para responsividad
+    const handleResize = () => {
+      if (marqueeRef.current) {
+        const marquee = marqueeRef.current;
+        const marqueeContent = marquee.querySelector(
+          ".marquee-content",
+        ) as HTMLElement | null;
+        if (!marqueeContent) return;
+        gsap.killTweensOf(marqueeContent);
+        marqueeContent.style.transform = "translateX(0)";
+        const contentWidth = marqueeContent.scrollWidth / 2;
+        const distance = contentWidth;
+        const baseSpeed = 60;
+        const duration = distance / baseSpeed;
+        gsap.to(marqueeContent, {
+          x: -distance,
+          duration,
+          ease: "none",
+          repeat: -1,
+          modifiers: {
+            x: gsap.utils.unitize((x) => parseFloat(x) % -distance),
+          },
+        });
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      ctx.revert();
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
