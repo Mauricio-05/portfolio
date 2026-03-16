@@ -24,8 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Mauricio Betancur | Software Developer",
   description:
-    "Creative developer crafting digital experiences with modern web technologies. Specialized in React, TypeScript, and interactive animations.",
-  generator: "v0.app",
+    "Construyendo soluciones digitales en la intersección entre tecnología, rendimiento y experiencia de usuario.",
   keywords: [
     "developer",
     "portfolio",
